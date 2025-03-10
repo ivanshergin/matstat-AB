@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  jupyter:
+    container_name: matstat_jupyter
+    build: ./jupyter/
+    volumes:
+      - ../:/home/jovyan/work/
+    ports:
+      - 8888:8888
